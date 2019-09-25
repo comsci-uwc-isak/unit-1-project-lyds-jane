@@ -31,6 +31,33 @@ Design
 Development
 --------
 
+### 1. Script for installation
+
+The script below creates the folder structure for the application
+
+```.sh
+#!/bin/bash
+
+#This program creates the folder structure for the minimal rental car
+
+echo "Starting installation"
+echo "Installing in desktop (default). Click ENTER."
+read
+
+cd /Users/lydiaetherington/Desktop
+
+#create app folder
+
+mkdir RentalCarApp
+cd RentalCarApp
+mkdir database
+mkdir scripts
+
+#confirm
+
+echo "Installation completed successfully"
+```
+
 Evaluation
 -----------
 
