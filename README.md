@@ -21,7 +21,7 @@ The Minimal Car Rental app program is very feasible, with minimal organizational
 Design
 ---------
 
-##First sketch of system
+### First sketch of system
 
 ![System Diagram](systemDiagram.png)
 
