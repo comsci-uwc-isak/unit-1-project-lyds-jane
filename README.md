@@ -21,6 +21,13 @@ The Minimal Car Rental app program is very feasible, with minimal organizational
 Design
 ---------
 
+##First sketch of system
+
+![System Diagram](systemDiagram.png)
+
+**Fig 1** this diagram shows the main components of the minimal rental app. It includes inputs/outputs and main actions.
+
+
 Development
 --------
 
