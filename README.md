@@ -57,6 +57,7 @@ mkdir scripts
 
 echo "Installation completed successfully"
 ```
+This script meets the requirement of the client for a simple installation. However, it could be simplified so that the user does not need to excecute the program by typing ``bash install.sh``
 
 Evaluation
 -----------
