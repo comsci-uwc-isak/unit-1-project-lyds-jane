@@ -28,6 +28,10 @@ Design
 **Fig 1** this diagram shows the main components of the minimal rental app. It includes inputs/outputs and main actions.
 
 
+## Flow Diagrams
+
+### Flow diagram for creating a frame in the bash terminal
+
 Development
 --------
 
@@ -58,6 +62,21 @@ mkdir scripts
 echo "Installation completed successfully"
 ```
 This script meets the requirement of the client for a simple installation. However, it could be simplified so that the user does not need to excecute the program by typing ``bash install.sh``
+
+### Problem Solving
+
+1. How to detect if a number is odd or even
+
+```.sh
+  if [ $len % 2 -eq 0 ]
+```
+
+2. How to create uninstall program
+
+```
+cd /Users/lydiaetherington/Desktop
+rm -r RentalCarApp/
+```
 
 Evaluation
 -----------
