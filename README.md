@@ -78,6 +78,22 @@ cd /Users/lydiaetherington/Desktop
 rm -r RentalCarApp/
 ```
 
+### Developing the action Create New Car
+This process involves the inputs License plate, Make, Year, and Number of people being added to the main car file and it's own file.
+The following steps describe the algorithm
+
+1. Get the inputs as arguments `$1 $2 $3 $4`
+2. Ensure that the user has given all four arguments
+```
+if [ $# -ne 4 ]; then
+  echo "Error. Please enter all information."
+fi
+```
+3. Store new car inside mainCarFile.txt
+`echo $1 $2 $3 $3 >> mainCarFile.txt`
+4. Create new file for recording trips
+`echo " " > $1.txt`
+
 Evaluation
 -----------
 
