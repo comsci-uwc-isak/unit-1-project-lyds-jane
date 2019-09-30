@@ -79,7 +79,7 @@ rm -r RentalCarApp/
 ```
 
 ### Developing the action Create New Car
-This process involves the inputs License plate, Make, Year, and Number of people being added to the main car file and it's own file.
+This process involves the inputs License, Make, Year, and Passengers being added to the main car file and its own file.
 The following steps describe the algorithm
 
 1. Get the inputs as arguments `$1 $2 $3 $4`
@@ -93,6 +93,21 @@ fi
 `echo $1 $2 $3 $3 >> mainCarFile.txt`
 4. Create new file for recording trips
 `echo " " > $1.txt`
+
+### Developing the action Record New Trip
+This process involves the inputs License and Distance being added to the car's file
+
+1. Get the inputs as arguments `$1 $2`
+2. Check that the car exists
+```
+if [ ! -f $1.txt ]; then
+  echo "Car does not exist"
+fi
+```
+3. Add new trip to car's file
+```
+echo $2 >> $1.txt
+```
 
 Evaluation
 -----------
