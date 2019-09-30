@@ -1,21 +1,19 @@
 #!/bin/bash
 
-#This program creates the folder structure for the minimal rental car
+#This program creates a new car for the user
 
-bash dumbFrame.sh Welcome
-echo "Starting installation"
-echo "Installing in desktop (default). Click ENTER."
-read
+#Make sure all arguments are present
+if [ $# -ne 4 ]; then
+    echo "Error. Please enter all information:"
+    echo "License Maker Year Passengers"
+fi
 
-cd /Users/lydiaetherington/Desktop
+#Add to mainCarFile.txt
 
-#create app folder
+echo $1 $2 $3 $4 >> mainCarFile.txt
 
-mkdir RentalCarApp
-cd RentalCarApp
-mkdir database
-mkdir scripts
+#Create file for recording trips
 
-#confirm
+echo "Trip log for $1" > $1.txt
 
-echo "Installation completed successfully"
+bash dumbFrame.sh Installation Complete
