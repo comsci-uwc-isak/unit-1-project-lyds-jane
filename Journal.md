@@ -43,3 +43,17 @@
 
 ## What did I learn
 * ASCII
+
+02/10/2019
+---
+
+## Tasks done
+* Presented our homework on the MCRA program
+* Updated the "planning" section
+
+## What did I learn
+* How to use grep to find lines in .txt commands
+* cp command
+
+## Questions
+* How do you add all of the elements in a file?
