@@ -15,8 +15,27 @@ Contents
 Planning
 ----------
 
-The Minimal Car Rental app program is very feasible, with minimal organizational issues. The project centers around **technical feasibility**, using only bash and the terminal, making that aspect simple and not concerning. This also means that the **economic factor** of the program is very feasible, because the user does not need to spend any money on extra software or training. The project is **legal**, since all it does is record information inputted by the user. The **operational feasibility** of the project is relatively simple; each car both has its own .txt file and contributes to an aggregate .txt file, and the script prompts the user for specific inputs. The **schedule** of the project depends on the experience of the coder, however, it couldn’t take more than a week to develop the programs to input various information into the files. Ultimately, this system is very realistic and could easily be developed.
+### Definition of the problem
+A car rental company is looking for a new system that can help them record data about their cars, specifically regarding the trips they have made.
 
+Currently, this is done on paper. This is an incredibly inefficiant system, as it is difficult to organize and access. The pages must be sorted by-hand, and if one is lost or destroyed, the information is gone. the company is looking for a way to store their information on the computer and back it up regularily.
+
+However, they do not know much about computers. They want to be able to create, delete, and edit basic information about each car. They also want to record trips and see a summary of their trips upon request.
+
+I have volunteered to create this system for them, and make it as 
+
+### Proposed Solution
+The Minimal Car Rental app program on bash is very feasible, with minimal organizational issues. The project centers around **technical feasibility**, using only bash and the terminal, making that aspect simple and not concerning. This also means that the **economic factor** of the program is very feasible, because the user does not need to spend any money on extra software or training. The project is **legal**, since all it does is record information inputted by the user. The **operational feasibility** of the project is relatively simple; each car both has its own .txt file and contributes to an aggregate .txt file, and the script prompts the user for specific inputs. The **schedule** of the project depends on the experience of the coder, however, it couldn’t take more than a week to develop the programs to input various information into the files. Ultimately, this system is very realistic and could easily be developed.
+
+
+### Success Criteria
+These are outcomes that can be measured
+1. A car can be created, deleted, and edited
+2. A trip can be recorded for a given car
+3. A summary (total distance travelled, average) of trips can be requested
+4. A basic working backup system is available
+5. The user can easily (name notation, documentation) understand the commands
+6. Simple installation & uninstallation (no additional software, one-step process)
 
 Design
 ---------
