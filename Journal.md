@@ -34,26 +34,26 @@
 30/09/2019
 -----
 
-## Tasks done
+### Tasks done
 * Created create.sh and record.sh
 
-## To do
+### To do
 * Create summary.sh
 * Fix problems in Friday's homework
 
-## What did I learn
+### What did I learn
 * ASCII
 
 02/10/2019
 ---
 
-## Tasks done
+### Tasks done
 * Presented our homework on the MCRA program
 * Updated the "planning" section
 
-## What did I learn
+### What did I learn
 * How to use grep to find lines in .txt commands
 * cp command
 
-## Questions
+### Questions
 * How do you add all of the elements in a file?
