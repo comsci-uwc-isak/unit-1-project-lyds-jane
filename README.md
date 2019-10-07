@@ -131,5 +131,6 @@ echo $2 >> $1.txt
 Evaluation
 -----------
 
-
+Test 1: A car can be created and stored in the database
+For this purpose we will create the file testCreate.sh. This is called software testing.
 
