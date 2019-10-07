@@ -117,8 +117,8 @@ fi
 
 Below is the flowchart for a program that frames an argument:
 
-![frame1](frame1) 
-![frame2](frame2)
+![frame1](frame1.jpg) 
+![frame2](frame2.jpg)
 
 ### Developing the action Record New Trip
 This process involves the inputs License and Distance being added to the car's file
