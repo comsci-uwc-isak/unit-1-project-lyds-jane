@@ -117,7 +117,7 @@ fi
 
 Below is the flowchart for a program that frames an argument:
 
-![frame 1](frame1.HEIC) 
+![frame1](frame1.HEIC) 
 ![frame2](frame2.HEIC)
 
 ### Developing the action Record New Trip
