@@ -54,7 +54,7 @@ Design
 Development
 --------
 
-### 1. Script for installation
+### Script for installation
 
 The script below creates the folder structure for the application
 
@@ -112,6 +112,13 @@ fi
 `echo $1 $2 $3 $3 >> mainCarFile.txt`
 4. Create new file for recording trips
 `echo " " > $1.txt`
+
+## Framing text (used in create.sh)
+
+Below is the flowchart for a program that frames an argument:
+
+![frame 1](frame1.HEIC) 
+![frame2](frame2.HEIC)
 
 ### Developing the action Record New Trip
 This process involves the inputs License and Distance being added to the car's file
