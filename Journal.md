@@ -52,8 +52,19 @@
 * Updated the "planning" section
 
 ### What did I learn
-* How to use grep to find lines in .txt commands
+* How to use grep to find lines in .txt
 * cp command
 
 ### Questions
 * How do you add all of the elements in a file?
+
+07/10/2019
+---
+
+### Tasks done
+* Created testCreate.sh
+* Updated README.txt (to explain testCreate.sh)
+
+### What did I learn
+* How to read one line of text in .txt files
+* The different types of testing
