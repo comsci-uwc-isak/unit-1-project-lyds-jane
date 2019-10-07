@@ -134,3 +134,52 @@ Evaluation
 Test 1: A car can be created and stored in the database
 For this purpose we will create the file testCreate.sh. This is called software testing.
 
+First, we need to check that the file create.sh exists:
+```
+cd ../scripts/
+if [ -f "create.sh" ]; then
+        echo "File exists, test will start now."
+else
+        echo "Error. File create.sh does not exist. Test failed."
+        exit
+fi
+```
+
+Then, we run the program to create a car:
+```
+bash create.sh TXM901 Nissan red 9
+```
+
+Once the car has been created, we need to check two things:
+
+#1: Was a .txt file created for this car?
+```
+cd ../Database/
+if [ -f "TXM901.txt" ]; then
+        echo "First stage successful. Proceeding with test"
+else
+        echo "Test failed."
+        exit
+fi
+
+```
+
+#2: Was this car added to mainCarFile.txt?
+```
+cd ../Database/
+firstline=$( tail -n 1 mainCarFile.txt )
+if [ "$firstline"  == "TXM901 Nissan red 9" ]; then
+        echo "Test successful."
+else
+        echo "Test failed."
+        exit
+fi
+
+```
+
+Then, we need to delete the car created by the test.
+```
+cd ../Database/
+rm TXM901.txt
+echo " " > mainCarFile.txt
+```
