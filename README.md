@@ -135,6 +135,52 @@ fi
 echo $2 >> $1.txt
 ```
 
+### Developing the action Summarize Trips
+For this program, we encountered three problems we needed to solve:
+
+**1. Reading a .txt file line by line**
+To solve this problem, we used a while loop:
+```.sh
+FILE="../Database/k94llp.txt"
+while read line
+do
+  echo $line
+done < $FILE
+```
+
+**2. Splitting a line by spaces**
+In order to print each value of a line individually, we used a for loop:
+```.sh
+FILE="../Database/k94llp.txt"
+while read line
+do
+  #Bash splits a line by spaces
+  for word in $line
+  do
+    echo $word
+    #Only print first word with break:
+    break
+  done
+done < $FILE
+```
+
+**3. Adding terms in a .txt file**
+Once all of the elements are organized in the file, adding them together was very simple:
+```
+total=0
+FILE="../Database/k94llp.txt"
+while read line
+do
+  #Bash splits a line by spaces
+  for word in $line
+  do
+    km=$word
+    (( total=$total + $km ))
+    break
+  done
+done < $FILE
+```
+
 Evaluation
 -----------
 
