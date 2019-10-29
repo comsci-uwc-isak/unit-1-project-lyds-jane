@@ -181,6 +181,26 @@ do
 done < $FILE
 ```
 
+### Developping User Help Files
+
+We are using the man apges protocol to provide user information.
+
+For further information on the man pages, see: https://www.cyberciti.biz/faq/linux-unix-creating-a-manpage/
+
+Here is the code for our man page, create.6:
+
+```
+.TH man 6 "29 Oct 2019" "1.0" "create man page"
+.SH NAME
+create \- Creates a new car
+.SH SYNOPSIS
+bash create [license] [model] [colour] [passengers]
+.SH DESCRIPTION
+Create is a bash program that allows users to create a new car inside the Database and a new car file
+.SH AUTHOR
+Programmer Lydia Etherington
+```
+
 Evaluation
 -----------
 
