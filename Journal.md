@@ -68,3 +68,26 @@
 ### What did I learn
 * How to read one line of text in .txt files
 * The different types of testing
+
+29/10/2019
+----
+
+## What has worked for me so far
+I am really enjoying the computer science course so far. I like the fact that we are constantly able to change and improve our work, and that the class is more focused on skill development than assesment.
+
+## What skills I have developed
+I have developped many skills so far in computer sciences. I have gone from not knowing anything about coding or system management to understanding many concepts, such as:
+* The basic process of program development
+* The various stages and methods of plannning a program
+* How to assess the effectiveness of a program
+* Various methods of presenting and explaining a program to others
+
+I have also learned a lot about programming, such as:
+* Basic bash commands
+* .sh, .txt, and .md file formats
+* If statements
+* While and for loops
+* Arrays and ranges
+
+## What I should change to achieve the highest performance possible
+To achieve the highest performance possible, I need to organize my study notes by winter break. I want to consolodate all of the programming concepts I have learned so far, as well as go through the syllabus systematically and review the topics we have covered in class.
