@@ -49,9 +49,11 @@ Design
 **Fig 1** this diagram shows the main components of the minimal rental app. It includes inputs/outputs and main actions.
 
 
-## Flow Diagrams
+### Test plan
 
-### Flow diagram for creating a frame in the bash terminal
+The following is the way in which we will test the program:
+
+![Test plan](testplan.png)
 
 Development
 --------
@@ -183,9 +185,9 @@ do
 done < $FILE
 ```
 
-### Developping User Help Files
+### Developping User Help Files Using man
 
-We are using the man apges protocol to provide user information.
+We are using the man pages protocol to provide user information.
 
 For further information on the man pages, see: https://www.cyberciti.biz/faq/linux-unix-creating-a-manpage/
 
@@ -203,8 +205,14 @@ Create is a bash program that allows users to create a new car inside the Databa
 Programmer Lydia Etherington
 ```
 
+### External Sources
+
+All of the code was created by Lydia Etherington, with the exception of the examples below:
+
 Evaluation
 -----------
+
+### Testing create.sh
 
 Test 1: A car can be created and stored in the database
 For this purpose we will create the file testCreate.sh. This is called software testing.
@@ -260,3 +268,18 @@ echo " " > mainCarFile.txt
 ```
 
 This is known as **dynamic, alpha, white-box** testing. Dynamic testing is when the program is excecuted through the test, as opposed to static testing, where the code is simply read through. In this test, create.sh is run and checked for errors, making this test dynamic. Alpha testing is when a program is tested internally by developpers, before being released to the client. Since we used this to test our own code, it was alpha testing. However, if the user used testCreate.sh to test the program, it would be beta testing. Finally, white-box testing (or structural testing) is when the test looks inside the program in order to check its functionability. This is different than black-box testing (or functional testing), where the structure is unknown, and software interfaces are used. Since this program looks inside mainCarFile.txt and Database/ for the new car, it is white-box testing.
+
+
+## Final evaluation
+
+Earlier, we established the success criteria as the following:
+* A car can be created, deleted, and edited
+* A trip can be recorded for a given car
+* A summary (total distance travelled, average) of trips can be requested
+* A basic working backup system is available
+* The user can easily (name notation, documentation) understand the commands
+* Simple installation & uninstallation (no additional software, one-step process)
+
+Using this, in conjunction with the [test plan](#design), we can determine that this program is successful. All of the actions are possible: create, delete, edit, record, summary, and backup. These processes are all very simple, and give the user comprehensible error commands should they forget to input certain information. Furthermore, all variables are appropriately named, and the code features comments that make it easy to understand. Finally, the installation and uninstallation processes are quite simple. Once the program is run, the user does not need to do anything except confirm the action by clicking enter.
+
+In the future, this program could be changed to be simpler and more effective. To make it simpler, first, program names could be changed to not include the .sh, as this is very easy for the user to forget. Furthermore, there could be more user help documentation provided, giving the user information on how to use each program, including adding arguments. To make it more effective, the installation process could be improved. The file pathways and names are specific to my laptop, and the program copies all the files from a local folder. In order for external sources to be able to use this program, these would have to be changed to accomodate anyone's computer. Furthermore, the program could include more information, such as trips' dates. Ultimately, this program could include more elements, but it is a succesful mininmum viable product.
