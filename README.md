@@ -72,48 +72,67 @@ Development
 
 ### Script for installation
 
-The script below creates the folder structure for the application
+The script below shows the complete creation of the folder structure for the application
+
+*This segment has been edited since its original creation to include a more updated version of install.sh*
 
 ```.sh
 #!/bin/bash
-
 #This program creates the folder structure for the minimal rental car
 
+#Start installation process
+bash dumbFrame.sh Welcome
 echo "Starting installation"
 echo "Installing in desktop (default). Click ENTER."
 read
 
+
+#Navigate to Desktop
 cd /Users/lydiaetherington/Desktop
 
-#create app folder
-
+#Create App Folder and Contents
 mkdir RentalCarApp
 cd RentalCarApp
-mkdir database
-mkdir scripts
+mkdir Database
+mkdir Scripts
+mkdir User_Help_Files
+cd Database/
+echo " " > mainCarFile.txt
 
-#confirm
+#copy all scripts into folder
+cp /Users/lydiaetherington/Desktop/School/Comp_Sci_Stuff/progress-journal-lyds-jane/unit1/Scripts/* ~/Desktop/RentalCarApp/Scripts
 
+#copy help files
+cp /Users/lydiaetherington/Desktop/School/Comp_Sci_Stuff/progress-journal-lyds-jane/unit1/User_Help_Files/* ~/Desktop/RentalCarApp/User_Help_Files
+
+#Navigate to folder so user can start using program
+cd ~/Desktop/RentalCarApp/Scripts/
+
+#Finish Installation
 echo "Installation completed successfully"
 ```
+
 This script meets the requirement of the client for a simple installation. However, it could be simplified so that the user does not need to excecute the program by typing ``bash install.sh``
 
 ### Problem Solving
 
-1. How to detect if a number is odd or even
+**How to detect if a number is odd or even
 
 ```.sh
   if [ $len % 2 -eq 0 ]
 ```
 
-2. How to create uninstall program
+**How to create uninstall program
 
 ```
 cd /Users/lydiaetherington/Desktop
 rm -r RentalCarApp/
 ```
 
-### Developing the action Create New Car
+### Developing Actions
+
+**Create New Car
+
 This process involves the inputs License, Make, Year, and Passengers being added to the main car file and its own file.
 The following steps describe the algorithm
 
@@ -130,7 +149,8 @@ fi
 `echo " " > $1.txt`
 
 
-### Developing the action Record New Trip
+**Record New Trip
+
 This process involves the inputs License and Distance being added to the car's file
 
 1. Get the inputs as arguments `$1 $2`
@@ -145,10 +165,11 @@ fi
 echo $2 >> $1.txt
 ```
 
-### Developing the action Summarize Trips
+**Summarize Trips
+
 For this program, we encountered three problems we needed to solve:
 
-**1. Reading a .txt file line by line**
+1. Reading a .txt file line by line
 To solve this problem, we used a while loop:
 ```.sh
 FILE="../Database/k94llp.txt"
@@ -158,7 +179,7 @@ do
 done < $FILE
 ```
 
-**2. Splitting a line by spaces**
+2. Splitting a line by spaces
 In order to print each value of a line individually, we used a for loop:
 ```.sh
 FILE="../Database/k94llp.txt"
@@ -174,7 +195,7 @@ do
 done < $FILE
 ```
 
-**3. Adding terms in a .txt file**
+3. Adding terms in a .txt file
 Once all of the elements are organized in the file, adding them together was very simple:
 ```
 total=0
@@ -191,7 +212,25 @@ do
 done < $FILE
 ```
 
-### Developping User Help Files Using man
+### Use of Programming Tools
+
+**Bash commands
+
+This application uses exclusively bash commands. This can be easily used in the Terminal, and is simple for the user without requiring any extra training or installation. Examples of bash commands can be seen in all snippets of code on this document.
+
+**For loops
+
+For loops were used frequently for this program. They helped shorten code and repeat long processes. An example of a for loop is shown below. In this scenario, the for loop is used to break up lines of text into individual numbers that can then be added together.
+
+![]()
+
+**If statement
+
+This is a very common tool. It was used many times in the RentalCarApp, but most frequently to check the user's arguments. An example is shown below:
+
+![]()
+
+**User help files with man pages
 
 We are using the man pages protocol to provide user information.
 
@@ -211,11 +250,23 @@ Create is a bash program that allows users to create a new car inside the Databa
 Programmer Lydia Etherington
 ```
 
-### External Sources
+**Storing information with GitHub
+
+The creation of this software utilized GitHub to save progress, and to provide a dialogue between teachers and students while learning the syntax. However, GitHub is not used in the actual application, as it is not something easily accessible to everyone.
+
+### Consultation of External Sources
 
 All of the code was created by Lydia Etherington, with the exception of the examples below:
 
+![alex1](alex1)
+Created by Alex Nygard and Khalid Ismail
+![alex2](alex2)
+Created by Alex Nygard and Khalid Ismail
 
+![ruben1](ruben1)
+Created by Dr. Ruben Pinzon
+![ruben2](ruben2)
+Created by Dr. Ruben Pinzon
 
 Evaluation
 -----------
