@@ -44,10 +44,9 @@ Design
 
 ### First sketch of system
 
+This diagram shows the main components of the minimal rental app. It includes inputs/outputs and main actions.
+
 ![System Diagram](systemDiagram.png)
-
-**Fig 1** this diagram shows the main components of the minimal rental app. It includes inputs/outputs and main actions.
-
 
 ### Test plan
 
