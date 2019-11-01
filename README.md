@@ -131,7 +131,7 @@ rm -r RentalCarApp/
 
 ### Developing Actions
 
-**Create New Car
+**Create New Car**
 
 This process involves the inputs License, Make, Year, and Passengers being added to the main car file and its own file.
 The following steps describe the algorithm
@@ -149,7 +149,7 @@ fi
 `echo " " > $1.txt`
 
 
-**Record New Trip
+**Record New Trip**
 
 This process involves the inputs License and Distance being added to the car's file
 
@@ -165,7 +165,7 @@ fi
 echo $2 >> $1.txt
 ```
 
-**Summarize Trips
+**Summarize Trips**
 
 For this program, we encountered three problems we needed to solve:
 
@@ -214,23 +214,23 @@ done < $FILE
 
 ### Use of Programming Tools
 
-**Bash commands
+**Bash commands**
 
 This application uses exclusively bash commands. This can be easily used in the Terminal, and is simple for the user without requiring any extra training or installation. Examples of bash commands can be seen in all snippets of code on this document.
 
-**For loops
+**For loops**
 
 For loops were used frequently for this program. They helped shorten code and repeat long processes. An example of a for loop is shown below. In this scenario, the for loop is used to break up lines of text into individual numbers that can then be added together.
 
 ![For Loop](forloop.png)
 
-**If statement
+**If statement**
 
 This is a very common tool. It was used many times in the RentalCarApp, but most frequently to check the user's arguments. An example is shown below:
 
 ![If Statement](ifstatement.png)
 
-**User help files with man pages
+**User help files with man pages**
 
 We are using the man pages protocol to provide user information.
 
@@ -250,7 +250,7 @@ Create is a bash program that allows users to create a new car inside the Databa
 Programmer Lydia Etherington
 ```
 
-**Storing information with GitHub
+**Storing information with GitHub**
 
 The creation of this software utilized GitHub to save progress, and to provide a dialogue between teachers and students while learning the syntax. However, GitHub is not used in the actual application, as it is not something easily accessible to everyone.
 
@@ -258,9 +258,9 @@ The creation of this software utilized GitHub to save progress, and to provide a
 
 All of the code was created by Lydia Etherington, with the exception of the examples below:
 
-![alex1](alex1)
+![alex1](alex1.png)
 Created by Alex Nygard and Khalid Ismail
-![alex2](alex2)
+![alex2](alex2.png)
 Created by Alex Nygard and Khalid Ismail
 
 ![ruben1](ruben1.png)
