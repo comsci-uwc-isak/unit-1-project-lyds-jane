@@ -222,13 +222,13 @@ This application uses exclusively bash commands. This can be easily used in the 
 
 For loops were used frequently for this program. They helped shorten code and repeat long processes. An example of a for loop is shown below. In this scenario, the for loop is used to break up lines of text into individual numbers that can then be added together.
 
-![]()
+![For Loop](forloop.png)
 
 **If statement
 
 This is a very common tool. It was used many times in the RentalCarApp, but most frequently to check the user's arguments. An example is shown below:
 
-![]()
+![If Statement](ifstatement.png)
 
 **User help files with man pages
 
@@ -263,9 +263,9 @@ Created by Alex Nygard and Khalid Ismail
 ![alex2](alex2)
 Created by Alex Nygard and Khalid Ismail
 
-![ruben1](ruben1)
+![ruben1](ruben1.png)
 Created by Dr. Ruben Pinzon
-![ruben2](ruben2)
+![ruben2](ruben2.png)
 Created by Dr. Ruben Pinzon
 
 Evaluation
