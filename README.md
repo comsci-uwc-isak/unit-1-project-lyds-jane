@@ -55,6 +55,18 @@ The following is the way in which we will test the program:
 
 ![Test plan](testplan.png)
 
+## Flow Charts
+
+### Framing text (used in create.sh)
+![frame1](frame1.jpg) 
+![frame2](frame2.jpg)
+
+### Creating a car
+![create](create.jpg)
+
+### Summary of a car's trip
+![summary](summary.jpg)
+
 Development
 --------
 
@@ -117,12 +129,6 @@ fi
 4. Create new file for recording trips
 `echo " " > $1.txt`
 
-## Framing text (used in create.sh)
-
-Below is the flowchart for a program that frames an argument:
-
-![frame1](frame1.jpg) 
-![frame2](frame2.jpg)
 
 ### Developing the action Record New Trip
 This process involves the inputs License and Distance being added to the car's file
@@ -208,6 +214,8 @@ Programmer Lydia Etherington
 ### External Sources
 
 All of the code was created by Lydia Etherington, with the exception of the examples below:
+
+
 
 Evaluation
 -----------
