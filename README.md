@@ -1,4 +1,10 @@
 ![CarRental](logo.png)
+```.py
+Marks=28
+Demo=4
+Total=(Mark+Demo)=32
+```
+**Graded on Nov 8th
 
 Car Rental Minimal App
 ===========================
@@ -39,6 +45,16 @@ These are outcomes that can be measured
 * The user can easily (name notation, documentation) understand the commands
 * Simple installation & uninstallation (no additional software, one-step process)
 
+**Criterion A**
+
+|Level|Descriptor|
+|----|-----|
+|6|The client in the car rental office is identified and his situation described. The rationale for choosing the proposed product (Computer tools used) is justified and includes a range of appropriate criteria for evaluating the success of the product.|
+```.sh
+Rational
+* Great job with this criterion! The TELOS is neat!
+```
+
 Design
 ---------
 
@@ -65,6 +81,17 @@ The following is the way in which we will test the program:
 
 ### Summary of a car's trip
 ![summary](summary.jpg)
+
+## Criterion B
+|**level**|**Description**|
+|-----|------------|
+|10|An outline test plan, are detailed and complete. A system diagram and at least 3 flow diagrams for algorithms in the product are included. From this information it is clear how the product was developed.|
+```.sh
+Rationale
+* The system diagram is gold!
+* Well done with the flow diagrams as well. You can crop the images to remove the empty space
+* Also, you are missing few marks because you did not include description for the images. The description is a small paragraph to explain why you included the graph, what you see in it. This is to make very clear to the reader the intention of the picture.
+```
 
 Development
 --------
@@ -327,6 +354,16 @@ echo " " > mainCarFile.txt
 
 This is known as **dynamic, alpha, white-box** testing. Dynamic testing is when the program is excecuted through the test, as opposed to static testing, where the code is simply read through. In this test, create.sh is run and checked for errors, making this test dynamic. Alpha testing is when a program is tested internally by developpers, before being released to the client. Since we used this to test our own code, it was alpha testing. However, if the user used testCreate.sh to test the program, it would be beta testing. Finally, white-box testing (or structural testing) is when the test looks inside the program in order to check its functionability. This is different than black-box testing (or functional testing), where the structure is unknown, and software interfaces are used. Since this program looks inside mainCarFile.txt and Database/ for the new car, it is white-box testing.
 
+## Criterion C
+|**level**|**Description**|
+|-----|------------|
+|6|The proposed solution is characterized by the appropriate use of existing tools. The techniques are adequate for the task and their use is explained. All sources are identified.|
+```.sh
+Rationale
+* Neat work here Lydia
+* Try to use the references in body of the document in the place where you use the information, for example, when researching solutions to the problems you faced," As presented in [1], to read a file using bash we can use...."
+
+```
 
 ## Final evaluation
 
@@ -341,3 +378,13 @@ Earlier, we established the success criteria as the following:
 Using this, in conjunction with the [test plan](#design), we can determine that this program is successful. All of the actions are possible: create, delete, edit, record, summary, and backup. These processes are all very simple, and give the user comprehensible error commands should they forget to input certain information. Furthermore, all variables are appropriately named, and the code features comments that make it easy to understand. Finally, the installation and uninstallation processes are quite simple. Once the program is run, the user does not need to do anything except confirm the action by clicking enter.
 
 In the future, this program could be changed to be simpler and more effective. To make it simpler, first, program names could be changed to not include the .sh, as this is very easy for the user to forget. Furthermore, there could be more user help documentation provided, giving the user information on how to use each program, including adding arguments. To make it more effective, the installation process could be improved. The file pathways and names are specific to my laptop, and the program copies all the files from a local folder. In order for external sources to be able to use this program, these would have to be changed to accomodate anyone's computer. Furthermore, the program could include more information, such as trips' dates. Ultimately, this program could include more elements, but it is a succesful mininmum viable product.
+
+## Criterion D
+|**level**|**Description**|
+|-----|------------|
+|6|The product is fully evaluated against the success criteria identified in criterion A. Recommendations for further improvement of the product are realistic.|
+```.sh
+Rationale
+* The Improvements are realistic and necessary. 
+* Test is well documented.
+```
